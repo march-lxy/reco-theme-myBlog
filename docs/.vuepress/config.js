@@ -16,6 +16,20 @@ module.exports = {
         "name": "viewport",
         "content": "width=device-width,initial-scale=1,user-scalable=no"
       }
+    ],
+    [
+      "script", {
+        "language": "javascript",
+        "type": "text/javascript",
+        "src": "https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"
+      }
+    ],
+    [
+      "script", {
+        "language": "javascript",
+        "type": "text/javascript",
+        "src": "/js/alert.js"
+      }
     ]
   ],
   "theme": "reco",
