@@ -26,9 +26,30 @@ module.exports = {
     ],
     [
       "script", {
+        "data-ad-client": "ca-pub-4115802993921398",
+        "async": "true",
+        "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+      }
+    ],
+    [
+      "script", {
         "language": "javascript",
         "type": "text/javascript",
         "src": "/js/alert.js"
+      }
+    ],
+    [
+      "script", {
+        "language": "javascript",
+        "type": "text/javascript",
+        "src": "/js/autoPush.js"
+      }
+    ],
+    [
+      "script", {
+        "language": "javascript",
+        "type": "text/javascript",
+        "src": "/js/tongji.js"
       }
     ]
   ],
