@@ -1,6 +1,6 @@
 module.exports = {
   "title": "平凡的你我",
-  "description": "理想成为大牛的小牛同学",
+  "description": "理想成为大牛的小陈同学",
   "dest": "public",
   "head": [
     [
@@ -75,7 +75,7 @@ module.exports = {
     "authorAvatar": "/avatar.png",
     "record": "陕ICP备19024018号-1",
     "recordLink": 'http://www.beian.miit.gov.cn',
-    startYear: '2019',
+    startYear: '2018',
 
   },
   "markdown": {
