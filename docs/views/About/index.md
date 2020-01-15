@@ -2,7 +2,7 @@
 isShowComments: false
 ---
 
-<p align="center"><img :src="$withBase('/avatar.png')" alt="SigureMo" height=200 width=200></p>
+<p align="center"><img :src="$withBase('/avatar.png')" alt="Caleb_logo" height=200 width=200></p>
 <p align="center">
   <a href="https://github.com/ACchenjiangbo" class="zi zi_tmGithub"></a>
   <a href="mailto:chenjibzh@163.com" class="zi zi_envelope"></a>
@@ -58,19 +58,19 @@ isShowComments: false
 
 <div class="showWei">
     <div class="title">微信</div>
-    <img :src="$withBase('/Wqrcode.png')" alt="SigureMo" height=200 width=200>
+    <img :src="$withBase('/Wqrcode.png')" alt="微信二维码" height=200 width=200>
 </div>
 
 ## 赞助一下？
 
 <div class="showWei">
     <div class="title wei">微信支付</div>
-    <img :src="$withBase('/wei.jpg')" alt="SigureMo" height=200 width=200>
+    <img :src="$withBase('/wei.jpg')" alt="微信赞助" height=200 width=200>
 </div>
 
 <div class="showWei">
     <div class="title zhi">支付宝</div>
-    <img :src="$withBase('/zhi.jpg')" alt="SigureMo" height=200 width=200>
+    <img :src="$withBase('/zhi.jpg')" alt="支付宝赞助" height=200 width=200>
 </div>
 
 

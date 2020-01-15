@@ -76,7 +76,12 @@ module.exports = {
     "record": "陕ICP备19024018号-1",
     "recordLink": 'http://www.beian.miit.gov.cn',
     startYear: '2018',
-
+    // friendLink: [{
+    //   title: '',
+    //   desc: '',
+    //   avatar: "",
+    //   link: ''
+    // }]
   },
   "markdown": {
     "lineNumbers": true
