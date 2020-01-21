@@ -97,5 +97,13 @@ module.exports = {
         recoverTime: 2000
       }
     ], 'go-top', ["@vuepress-reco/back-to-top", false],
+    ["@vuepress-reco/vuepress-plugin-bgm-player", {
+      audios: [{
+        name: "往后余生",
+        artist: '马良',
+        url: '/马良 - 往后余生.mp3',
+        cover: '/wang.jpg'
+      }],
+    }]
   ]
 }
