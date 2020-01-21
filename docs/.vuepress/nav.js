@@ -6,6 +6,9 @@ module.exports = [{
             }, {
                 text: 'JS',
                 link: '/views/technology-sharing/jsDir/'
+            }, {
+                text: 'vuepress',
+                link: '/views/technology-sharing/vuepress/'
             },
             {
                 text: 'Linux',

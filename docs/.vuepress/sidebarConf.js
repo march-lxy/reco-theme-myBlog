@@ -8,12 +8,13 @@ const filehelper = require(rootpath + '/utils/getFilenames.js');
 module.exports = {
 
     // 技术总结
-    '/views/technology-sharing/vue/': utils.genSidebar('Vue相关问题', filehelper.getFileName(docs + "/views/technology-sharing/vue/"), false),
+    '/views/technology-sharing/vue/': utils.genSidebar('VUE了解一下？', filehelper.getFileName(docs + "/views/technology-sharing/vue/"), false),
     '/views/technology-sharing/node/': utils.genSidebar('NodeJs&&爬虫', filehelper.getFileName(docs + "/views/technology-sharing/node/"), false),
     '/views/technology-sharing/jsDir/': utils.genSidebar('JS', filehelper.getFileName(docs + "/views/technology-sharing/jsDir/"), false),
     '/views/technology-sharing/Linux/': utils.genSidebar('Linux', filehelper.getFileName(docs + "/views/technology-sharing/Linux/"), false),
     '/views/technology-sharing/nuxt/': utils.genSidebar('nuxt', filehelper.getFileName(docs + "/views/technology-sharing/nuxt/"), false),
     '/views/technology-sharing/css/': utils.genSidebar('css', filehelper.getFileName(docs + "/views/technology-sharing/cssDir/"), false),
+    '/views/technology-sharing/vuepress/': utils.genSidebar('vuepress', filehelper.getFileName(docs + "/views/technology-sharing/vuepress/"), false),
     // 实用工具
 
     '/views/tools/': utils.genSidebar('实用工具', filehelper.getFileName(docs + "/views/tools/"), false),
