@@ -96,14 +96,6 @@ module.exports = {
         hideText: "(⸝⸝⸝ᵒ̴̶̷̥́ ⌑ ᵒ̴̶̷̣̥̀⸝⸝⸝) 喔哟，别走哎！",
         recoverTime: 2000
       }
-    ], 'go-top', ["@vuepress-reco/back-to-top", false],
-    ["@vuepress-reco/vuepress-plugin-bgm-player", {
-      audios: [{
-        name: "往后余生",
-        artist: '马良',
-        url: '/马良 - 往后余生.mp3',
-        cover: '/wang.jpg'
-      }],
-    }]
+    ], 'go-top', ["@vuepress-reco/back-to-top", false]
   ]
 }
