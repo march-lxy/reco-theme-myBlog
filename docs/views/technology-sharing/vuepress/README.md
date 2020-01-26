@@ -9,7 +9,8 @@ tags:
 ---
 
 ::: tip
-Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮件通知、评论管理、垃圾评论过滤等功能。支持完全自定义的邮件通知模板，基于Akismet API实现准确的垃圾评论过滤。
+Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮件通知、评论管理、垃圾评论过滤等功能。支持完全自定义的邮件通知模板，基于Akismet API实现准确的垃圾评论过滤。<br>
+开发者[@Deserts](https://deserts.io/)
 :::
 
 ## 云引擎"一键"部署
@@ -143,6 +144,3 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 **以上所有内容供大家参考，如有问题请及时指正，如有侵权，请及时联系删除**
 
 ### **完结撒花:tada::tada::tada:**
-::: tip
-鸣谢大佬[@Deserts](https://deserts.io/)
-:::
