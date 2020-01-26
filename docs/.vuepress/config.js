@@ -51,6 +51,14 @@ module.exports = {
         "type": "text/javascript",
         "src": "/js/tongji.js"
       }
+    ],
+    [
+      "script", {
+        'type': "text/javascript",
+        'language': "javascript",
+        'charset': "gb2312",
+        "src": "https://news.163.com/special/00019HSN/epidemic_data.js"
+      }
     ]
   ],
   "theme": "reco",
@@ -71,7 +79,7 @@ module.exports = {
     "logo": "/avatar.png",
     "search": true,
     "searchMaxSuggestions": 10,
-    "author": "Caleb",
+    "author": "caleb",
     "authorAvatar": "/avatar.png",
     "record": "陕ICP备19024018号-1",
     "recordLink": 'http://www.beian.miit.gov.cn',

@@ -57,5 +57,8 @@ module.exports = [{
     }, {
         text: '关于我',
         link: '/views/About/'
+    }, {
+        text: "武汉加油",
+        link: '/views/comeOn/'
     }
 ]
