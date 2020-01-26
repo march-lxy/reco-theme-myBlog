@@ -1,5 +1,6 @@
 module.exports = [{
         text: '技术总结',
+        icon: 'reco-api',
         items: [{
                 text: 'Vue',
                 link: '/views/technology-sharing/vue/'
@@ -30,10 +31,12 @@ module.exports = [{
     },
     {
         text: '实用工具',
-        link: '/views/tools/'
+        link: '/views/tools/',
+        icon: 'reco-category'
     },
     {
         text: '个人主页',
+        icon: 'reco-account',
         items: [{
                 text: 'GitHub',
                 link: 'https://github.com/ACchenjiangbo',
@@ -54,6 +57,7 @@ module.exports = [{
                 icon: 'reco-qq'
             }
         ]
+
     }, {
         text: '关于我',
         link: '/views/About/'

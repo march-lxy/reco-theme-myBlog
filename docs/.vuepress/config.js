@@ -62,9 +62,7 @@ module.exports = {
     ]
   ],
   "theme": "reco",
-  "themePicker": false, //颜色选择器
   "themeConfig": {
-    "themePicker": false, //颜色选择器
     "nav": require('./nav'),
     "sidebar": require('./sidebarConf'),
     "valineConfig": {
