@@ -26,13 +26,6 @@ module.exports = {
     ],
     [
       "script", {
-        "data-ad-client": "ca-pub-4115802993921398",
-        "async": "true",
-        "src": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-      }
-    ],
-    [
-      "script", {
         "language": "javascript",
         "type": "text/javascript",
         "src": "/js/alert.js"
@@ -50,14 +43,6 @@ module.exports = {
         "language": "javascript",
         "type": "text/javascript",
         "src": "/js/tongji.js"
-      }
-    ],
-    [
-      "script", {
-        'type': "text/javascript",
-        'language': "javascript",
-        'charset': "gb2312",
-        "src": "https://news.163.com/special/00019HSN/epidemic_data.js"
       }
     ]
   ],
@@ -102,6 +87,15 @@ module.exports = {
         hideText: "(⸝⸝⸝ᵒ̴̶̷̥́ ⌑ ᵒ̴̶̷̣̥̀⸝⸝⸝) 喔哟，别走哎！",
         recoverTime: 2000
       }
-    ], 'go-top', ["@vuepress-reco/back-to-top", false]
+    ], 'go-top', ["@vuepress-reco/back-to-top", false],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'theorem',
+        before: info => `<div class="theorem"><p class="title">${info}</p>`,
+        after: '</div>',
+      },
+    ],
+
   ]
 }

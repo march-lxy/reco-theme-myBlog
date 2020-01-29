@@ -60,9 +60,12 @@ module.exports = [{
 
     }, {
         text: '关于我',
-        link: '/views/About/'
+        link: '/views/other/about'
+    }, {
+        text: '友人帐',
+        link: '/views/other/theme-example'
     }, {
         text: "武汉加油",
-        link: '/views/comeOn/'
+        link: '/views/other/comeOn'
     }
 ]

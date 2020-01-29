@@ -10,16 +10,11 @@ categories:
 :::
 
 在这个严峻的时刻，我们就得积极响应国家的号召，时时刻刻注意，为国家减负。做到少出门，少到公共场合去，及时消毒，保持自己的卫生。***积极防护，保护自己。戴口罩，勤洗手。***
+
+
 ### 实时疫情情况
 
 **[网易新闻实时更新](https://news.163.com/special/epidemic/) -->我是一个链接**
-
-<ul class="wuhan">
-    <li v-for="(item,index) in list" :key="index"><div>{{item.name}}</div>   <span>确诊  <b>{{item.value}}</b> 例</span></li>
-</ul>
-
-`数据来源--网易新闻`
-
 
 
 ### 如何做才能降低感染冠状病毒的风险
@@ -43,16 +38,3 @@ categories:
 
 
 **在最后为武汉加油，为中国加油！一块努力，共同抗争，我们一定可以战胜难关。**
-
-<script>
-export default {
-  data() {
-    return {
-      list: [],
-    };
-  },
-  mounted() {
-    this.list = window.dataList;
-  }
-};
-</script>
