@@ -8,4 +8,11 @@ title: '友人帐'
 站点网址：https://bcjiangbo.cn <br>
 LOGO：https://bcjiangbo.cn/avatar.png
 :::
+
+# 摆阵，恭迎大佬！
+
+:::tip
+**点击名称跳转**
+:::
+
 <theme-example></theme-example>

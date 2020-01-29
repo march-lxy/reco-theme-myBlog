@@ -7,19 +7,19 @@
         :key="index"
         :style="index%2==0?bgInfo[0]:bgInfo[1]"
       >
-        <a :href="item.link" target="_blank" rel="noopener noreferrer">
-          <dl>
-            <dt class="card-img">
-              <img :src="item.thumbnail" class="img" />
-            </dt>
+        <dl>
+          <dt class="card-img">
+            <img :src="item.thumbnail" class="img" alt="缩略图" />
+          </dt>
+          <a :href="item.link" target="_blank" rel="noopener noreferrer">
             <dd class="card-content">
               <span class="card-name font-regular">
-                <a href>{{item.name}}</a>
+                <a>{{item.name}}</a>
               </span>
-              <span class="card-desc font-regular">{{item.desc}}</span>
+              <div class="card-desc font-regular">{{item.desc}}</div>
             </dd>
-          </dl>
-        </a>
+          </a>
+        </dl>
       </div>
     </div>
   </div>
@@ -38,11 +38,30 @@ export default {
           thumbnail: "https://www.recoluan.com/head.png"
         },
         {
+          name: "凉风有信",
+          desc: "责难无以成事",
+          link: "https://gleehub.com/",
+          thumbnail:
+            "https://static.xmt.cn/cc50c217cbe342ce951324583f2c6139.png"
+        },
+        {
           name: "LOGI",
           desc: "会点代码的强迫症",
           link: "https://logi.im",
           thumbnail:
             "https://ae01.alicdn.com/kf/UTB8q2lYPFfFXKJk43Otxh4IPFXaQ.jpeg"
+        },
+        {
+          name: "知行合一",
+          desc: "一生伏首拜阳明",
+          link: "https://www.myx1997.top/",
+          thumbnail: "https://www.myx1997.top/nezha.png"
+        },
+        {
+          name: "HeiYe",
+          desc: "我于杀戮之中盛放，亦如黎明中的花朵",
+          link: "https://heiyehk.github.io",
+          thumbnail: "https://heiyehk.github.io/blog/img/logo.jpg"
         }
       ],
       bgInfo: [
@@ -82,6 +101,7 @@ export default {
 
       dl {
         position: relative;
+        margin: 10px 0 10px 0;
       }
 
       .card-img {
@@ -89,29 +109,29 @@ export default {
         display: block;
         width: 75px;
         height: 75px;
-        top: -58px;
+        top: -50px;
         left: 30px;
-        border-radius: 0.3783783783783784rem;
+        border-radius: 10px;
         border: 3px solid #fff;
-        background: #fff;
+        overflow: hidden;
 
         .img {
           display: block;
           width: 100%;
           height: 100%;
           border-radius: 10px;
+          overflow: hidden;
         }
       }
 
       .card-content {
         display: block;
-        width: 100%;
-        position: relative;
         color: #fff;
+        position: relative;
+        height: auto;
 
         .font-regular {
-          width: 85%;
-          position: absolute;
+          width: 90%;
           text-align: left;
           display: inline-block;
           font-weight: 400;
@@ -119,9 +139,7 @@ export default {
         }
 
         .card-name {
-          width: 50%;
-          top: -8px;
-          left: 90px;
+          width: 60%;
           font-weight: 500;
           font-size: 24px;
           line-height: 30px;
@@ -129,8 +147,13 @@ export default {
           overflow: hidden;
           white-space: nowrap;
           text-overflow: ellipsis;
+          margin-left: 85px;
 
           a {
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             line-height: 1.1;
             display: inline-block;
             text-decoration: none;
@@ -151,8 +174,8 @@ export default {
         }
 
         .card-desc {
-          top: 35px;
           font-size: 16px;
+          margin-top: 10px;
         }
       }
 
@@ -167,7 +190,7 @@ export default {
   .theme-example {
     .blog-list-wrapper {
       .new-card {
-        width: 85%;
+        width: 100%;
         margin: 45px auto 10px auto;
       }
     }
