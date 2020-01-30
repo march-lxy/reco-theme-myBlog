@@ -29,3 +29,14 @@ jQuery(document).ready(function ($) {
             });
     });
 });
+
+
+window.$crisp = [];
+window.CRISP_WEBSITE_ID = "bb6101b3-0549-4389-97c1-e59ae65e5f9e";
+(function () {
+    d = document;
+    s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+})();
