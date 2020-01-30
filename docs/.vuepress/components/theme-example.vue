@@ -62,6 +62,18 @@ export default {
           desc: "我于杀戮之中盛放，亦如黎明中的花朵",
           link: "https://heiyehk.github.io",
           thumbnail: "https://heiyehk.github.io/blog/img/logo.jpg"
+        },
+        {
+          name: "阿业战记",
+          desc: "提升码农亩产，掰直码农方向",
+          link: "https://eeee.im",
+          thumbnail: "https://eeee.im/avatar.jpg"
+        },
+        {
+          name: "Quinn Tian's Blog",
+          desc: "一个专注于学习、记录和分享的个人网站",
+          link: "https://quinntian.com",
+          thumbnail: "https://quinntian.com/avatar"
         }
       ],
       bgInfo: [
@@ -139,7 +151,7 @@ export default {
         }
 
         .card-name {
-          width: 60%;
+          width: 70%;
           font-weight: 500;
           font-size: 24px;
           line-height: 30px;
