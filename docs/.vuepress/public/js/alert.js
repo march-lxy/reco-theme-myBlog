@@ -16,7 +16,9 @@ jQuery(document).ready(function ($) {
             "left": x,
             "position": "absolute",
             "font-weight": "bold",
-            "color": `rgb(${getRandom(255,0)},${getRandom(255,0)},${getRandom(255,0)})`
+            "color": `rgb(${getRandom(255,0)},${getRandom(255,0)},${getRandom(255,0)})`,
+            "user-select": 'none',
+            "cursor": 'default'
         });
         $("body").append($i);
         $i.animate({
