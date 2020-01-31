@@ -1,6 +1,7 @@
 ---
 title: 武汉加油，中国加油！
 date:  2020-01-26
+sticky: 1
 categories:
 - 助力中国
 ---
