@@ -61,7 +61,7 @@ export default {
 </script>
 ```
 ##### 效果
-![父传子.png](https://upload-images.jianshu.io/upload_images/17304901-4ec8c86f4862aca0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![父传子.png](/tech/vue/ptoc.webp)
 
 ## 2.子组件向父组件传值
 这时候就需要利用vue中的$emit将想要传递的值通过函数的形式传出，在父组件接收
@@ -131,9 +131,9 @@ export default {
 ```
 此时我在父组件里面定义了一个@toParent方法这个名称要和子组件里面this.$emit(arg1)的命名一样，用来接收。在getMag里面接收一个参数就是当前传回的值。
 ##### 效果
-![没传值的时候.png](https://upload-images.jianshu.io/upload_images/17304901-bba30769b6092908.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![没传值的时候.png](/tech/vue/no.webp)
 
-![已经传值.png](https://upload-images.jianshu.io/upload_images/17304901-163c7cd14d32f9d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![已经传值.png](/tech/vue/yes.webp)
 ## 3.兄弟组件传值
 兄弟组件之间就需要一个中间值，我在这里称为bus。在vue文件main.js中，我们利用 `Vue.prototype.bus=new Vue()` 来定义，此时我们就有了一个中间量。
 ##### 这是第一个子组件 -- 从这里向另外一个子组件传值
@@ -190,10 +190,10 @@ export default {
 ```
 在第二个子组件里面通过beforeCreate生命周期来获得传过来的值，这时候需要用`this.bus.$on`来接收，第一个参数是`this.bus.$emit`定义的第一个方法名，第二个参数是一个方法，此方法带一个返回参数。在这里我使用箭头函数。
 ##### 效果
-![未传值.png](https://upload-images.jianshu.io/upload_images/17304901-39c8836a6b4fcb65.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![未传值.png](/tech/vue/btobno.webp)
 
-![以传值.png](https://upload-images.jianshu.io/upload_images/17304901-0674fab32405b3ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![以传值.png](/tech/vue/btobyes.webp)
 而且可以利用input来输入不同的信息，传入到兄弟组件中，例如
-![input改变信息内容.png](https://upload-images.jianshu.io/upload_images/17304901-c934b0a43a32f17d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![input改变信息内容.png](/tech/vue/input.webp)
 
 > vue组件传值大概就是这么多，日常开发相对来说还是足够的。大家看到后觉得有什么问题，希望联系我，我好快速改正！持续更新！！！
