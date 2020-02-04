@@ -4,8 +4,6 @@ function getRandom(max, min) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 jQuery(document).ready(function ($) {
-    var str = '<div id="tp-weather-widget"></div>';
-    $("body").append(str);
     $("body").click(function (e) {
         var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
         var $i = $("<span/>").text(a[a_idx]);
@@ -44,37 +42,3 @@ window.CRISP_WEBSITE_ID = "bb6101b3-0549-4389-97c1-e59ae65e5f9e";
     s.async = 1;
     d.getElementsByTagName("head")[0].appendChild(s);
 })();
-
-
-
-(function (a, h, g, f, e, d, c, b) {
-    b = function () {
-        d = h.createElement(g);
-        c = h.getElementsByTagName(g)[0];
-        d.src = e;
-        d.charset = "utf-8";
-        d.async = 1;
-        c.parentNode.insertBefore(d, c)
-    };
-    a["SeniverseWeatherWidgetObject"] = f;
-    a[f] || (a[f] = function () {
-        (a[f].q = a[f].q || []).push(arguments)
-    });
-    a[f].l = +new Date();
-    if (a.attachEvent) {
-        a.attachEvent("onload", b)
-    } else {
-        a.addEventListener("load", b, false)
-    }
-}(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
-window.SeniverseWeatherWidget('show', {
-    flavor: "bubble",
-    location: "WQJ6YY8MHZP0",
-    geolocation: true,
-    language: "auto",
-    unit: "c",
-    theme: "auto",
-    token: "803a6356-189b-4290-b17f-ad4231134a06",
-    hover: "enabled",
-    container: "tp-weather-widget"
-})

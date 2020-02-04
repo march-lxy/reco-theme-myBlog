@@ -4,7 +4,6 @@ const rootpath = path.dirname(__dirname) //执行一次dirname将目录定位到
 const docs = rootpath;
 const utils = require(rootpath + '/utils/index.js');
 const filehelper = require(rootpath + '/utils/getFilenames.js');
-
 module.exports = {
 
     // 技术总结

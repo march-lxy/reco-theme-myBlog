@@ -46,10 +46,10 @@ tags:
 │  ├─.vuepress
 │  │  ├─config.js
 │  │  ├─nav.js
-|  │  └─sidebarConf.js
-|  └─utils
-|    ├─ getFilenames.js
-|    └─ index.js
+│  │  └─sidebarConf.js
+│  └─utils
+│    ├─ getFilenames.js
+│    └─ index.js
 ```
 
 ### 1.获取文件名
@@ -135,7 +135,7 @@ module.exports = {
 ```
 :::tip
 ```js
-utils.genSidebar(arg1,arg2)
+utils.genSidebar(arg1,arg2,arg3)
 ```
 **arg1: sidebar需要填写的title。**
 
