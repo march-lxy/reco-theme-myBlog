@@ -45,23 +45,17 @@ export default {
             "https://static.xmt.cn/cc50c217cbe342ce951324583f2c6139.png"
         },
         {
-          name: "LOGI",
-          desc: "会点代码的强迫症",
-          link: "https://logi.im",
-          thumbnail:
-            "https://ae01.alicdn.com/kf/UTB8q2lYPFfFXKJk43Otxh4IPFXaQ.jpeg"
-        },
-        {
           name: "知行合一",
           desc: "一生伏首拜阳明",
           link: "https://www.myx1997.top/",
           thumbnail: "https://www.myx1997.top/nezha.png"
         },
         {
-          name: "HeiYe",
-          desc: "我于杀戮之中盛放，亦如黎明中的花朵",
-          link: "https://heiyehk.github.io",
-          thumbnail: "https://heiyehk.github.io/blog/img/logo.jpg"
+          name: "LOGI",
+          desc: "会点代码的强迫症",
+          link: "https://logi.im",
+          thumbnail:
+            "https://ae01.alicdn.com/kf/UTB8q2lYPFfFXKJk43Otxh4IPFXaQ.jpeg"
         },
         {
           name: "阿业战记",
@@ -74,6 +68,12 @@ export default {
           desc: "一个专注于学习、记录和分享的个人网站",
           link: "https://quinntian.com",
           thumbnail: "https://quinntian.com/avatar"
+        },
+        {
+          name: "村头老杨头",
+          desc: "不忘初心、放得始终",
+          link: "http://ctlyt.yunypan.cn",
+          thumbnail: "http://ctlyt.yunypan.cn/avatar"
         }
       ],
       bgInfo: [
