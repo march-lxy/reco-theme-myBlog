@@ -22,18 +22,18 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 ![设置环境变量.png](/vuepress/setRule.png)
 
 具体格式如下：
-| 变量             |                     示例                     |                                                                                                                           说明 |
-|------------------|:--------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------:|
-| SITE_NAME        |                  平凡的你我                  |                                                                                                                 [必填]博客名称 |
-| SITE_URL         | [https://bcjiangbo.cn](https://bcjiangbo.cn) |                                                                                                                 [必填]首页地址 |
+|       变量       |                     示例                     |                                                              说明                                                              |
+|:----------------:|:--------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|
+|    SITE_NAME     |                  平凡的你我                  |                                                         [必填]博客名称                                                         |
+|     SITE_URL     | [https://bcjiangbo.cn](https://bcjiangbo.cn) |                                                         [必填]首页地址                                                         |
 | **SMTP_SERVICE** |                    "163"                     | [新版支持]邮件服务提供商，支持 QQ、163、126、Gmail 以及 [**更多**](https://nodemailer.com/smtp/well-known/#supported-services) |
-| SMTP_USER        |                xxxxx@163.com                 |                                                                                                             [必填]SMTP登录用户 |
-| SMTP_PASS        |                   XXXXXXXX                   |                                                                                   [必填]SMTP登录密码（QQ邮箱需要获取独立密码） |
-| SENDER_NAME      |                    caleb                     |                                                                                                                   [必填]发件人 |
-| SENDER_EMAIL     |                xxxxx@163.com                 |                                                                                                                 [必填]发件邮箱 |
-| ADMIN_URL        |           https://xxx.leanapp.cn/            |                                                                                            [建议]Web主机二级域名，用于自动唤醒 |
-| BLOGGER_EMAIL    |                 xxxxx@qq.com                 |                                                                                   [可选]博主通知收件地址，默认使用SENDER_EMAIL |
-| AKISMET_KEY      |                 xxxxxxxxxxxx                 |                                            [可选]Akismet Key 用于垃圾评论检测，设为MANUAL_REVIEW开启人工审核，留空不使用反垃圾 |
+|    SMTP_USER     |                xxxxx@163.com                 |                                                       [必填]SMTP登录用户                                                       |
+|    SMTP_PASS     |                   XXXXXXXX                   |                                          [必填]SMTP登录密码（QQ邮箱需要获取独立密码）                                          |
+|   SENDER_NAME    |                    caleb                     |                                                          [必填]发件人                                                          |
+|   SENDER_EMAIL   |                xxxxx@163.com                 |                                                         [必填]发件邮箱                                                         |
+|    ADMIN_URL     |           https://xxx.leanapp.cn/            |                                              [建议]Web主机二级域名，用于自动唤醒                                               |
+|  BLOGGER_EMAIL   |                 xxxxx@qq.com                 |                                          [可选]博主通知收件地址，默认使用SENDER_EMAIL                                          |
+|   AKISMET_KEY    |                 xxxxxxxxxxxx                 |                      [可选]Akismet Key 用于垃圾评论检测，设为MANUAL_REVIEW开启人工审核，留空不使用反垃圾                       |
 
 **以上必填参数请务必正确设置。**
 
@@ -83,12 +83,12 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 ### 1.环境变量设定
 邮件通知模板在云引擎环境变量中设定，可自定义通知邮件标题及内容模板。
 
-| 环境变量            |                        示例                        |                            说明 |
-|---------------------|:--------------------------------------------------:|--------------------------------:|
-| MAIL_SUBJECT        | ${PARENT_NICK}，您在${SITE_NAME}上的评论收到了回复 | [可选]@通知邮件主题（标题）模板 |
-| MAIL_TEMPLATE       |                       见下文                       |         [可选]@通知邮件内容模板 |
-| MAIL_SUBJECT_ADMIN  |              ${SITE_NAME}上有新评论了              |      [可选]博主邮件通知主题模板 |
-| MAIL_TEMPLATE_ADMIN |                       见下文                       |      [可选]博主邮件通知内容模板 |
+|      环境变量       |                        示例                        |              说明               |
+|:-------------------:|:--------------------------------------------------:|:-------------------------------:|
+|    MAIL_SUBJECT     | ${PARENT_NICK}，您在${SITE_NAME}上的评论收到了回复 | [可选]@通知邮件主题（标题）模板 |
+|    MAIL_TEMPLATE    |                       见下文                       |     [可选]@通知邮件内容模板     |
+| MAIL_SUBJECT_ADMIN  |              ${SITE_NAME}上有新评论了              |   [可选]博主邮件通知主题模板    |
+| MAIL_TEMPLATE_ADMIN |                       见下文                       |   [可选]博主邮件通知内容模板    |
 
 
 ### 2.自定义模板
@@ -97,15 +97,15 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 
 @通知模板中的可用变量如下（注，这是邮件模板变量，是指嵌入到HTML邮件模板中的变量，请勿与云引擎环境变量混淆）
 
-| 模板变量       |              说明               |
-|----------------|:-------------------------------:|
-| SITE_NAME      |            博客名称             |
-| SITE_URL       |          博客首页地址           |
-| POST_URL       |      文章地址（完整路径）       |
-| PARENT_NICK    | 收件人昵称（被@者，父级评论人） |
+|    模板变量    |              说明               |
+|:--------------:|:-------------------------------:|
+|   SITE_NAME    |            博客名称             |
+|    SITE_URL    |          博客首页地址           |
+|    POST_URL    |      文章地址（完整路径）       |
+|  PARENT_NICK   | 收件人昵称（被@者，父级评论人） |
 | PARENT_COMMENT |          父级评论内容           |
-| NICK           |          新评论者昵称           |
-| COMMENT        |           新评论内容            |
+|      NICK      |          新评论者昵称           |
+|    COMMENT     |           新评论内容            |
 
 **（1）默认被@通知邮件内容模板如下：**
 
