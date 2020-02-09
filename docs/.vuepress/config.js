@@ -44,6 +44,12 @@ module.exports = {
         "type": "text/javascript",
         "src": "/js/tongji.js"
       }
+    ],
+    [
+      "script", {
+        "src": " https://www.googletagmanager.com/gtag/js?id=UA-158081883-1",
+        "axync": true
+      }
     ]
   ],
   "theme": "reco",
@@ -95,7 +101,6 @@ module.exports = {
         before: info => `<div class="theorem"><p class="title">${info}</p>`,
         after: '</div>',
       },
-    ],
-
+    ]
   ]
 }
