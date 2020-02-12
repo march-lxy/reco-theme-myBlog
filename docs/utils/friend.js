@@ -56,6 +56,11 @@ var friendList = [{
         desc: "用生活记录我们的爱！",
         link: "https://muuzi.cn/",
         thumbnail: "https://muuzi.cn/mzlogo.png",
+    }, {
+        name: "Lwend’s Blog",
+        desc: "Lwend’s Blog",
+        link: "https://www.lwend.com/",
+        thumbnail: "https://www.lwend.com/avatar.jpg"
     }
 ]
 
