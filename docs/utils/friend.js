@@ -61,6 +61,11 @@ var friendList = [{
         desc: "Lwend’s Blog",
         link: "https://www.lwend.com/",
         thumbnail: "https://www.lwend.com/avatar.jpg"
+    }, {
+        name: "稻田守望者",
+        desc: "一名医学僧的博客 生活、学习、音乐、图书、文章分享",
+        link: "https://blog.tcitr.com",
+        thumbnail: "https://blog.tcitr.com/wp-content/uploads/2020/02/%E4%BA%BA%E5%83%8F.png"
     }
 ]
 
