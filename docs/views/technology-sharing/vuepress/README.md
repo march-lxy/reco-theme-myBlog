@@ -31,6 +31,7 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 |    SMTP_PASS     |                   XXXXXXXX                   |                                          [必填]SMTP登录密码（QQ邮箱需要获取独立密码）                                          |
 |   SENDER_NAME    |                    caleb                     |                                                          [必填]发件人                                                          |
 |   SENDER_EMAIL   |                xxxxx@163.com                 |                                                         [必填]发件邮箱                                                         |
+|   BLOGGER_EMAIL   |                xxxxx@163.com                 |                 [可选]如果自己在回复，设置这个可以不向自己的邮箱发送邮件|
 |    ADMIN_URL     |           https://xxx.leanapp.cn/            |                                              [建议]Web主机二级域名，用于自动唤醒                                               |
 |  BLOGGER_EMAIL   |                 xxxxx@qq.com                 |                                          [可选]博主通知收件地址，默认使用SENDER_EMAIL                                          |
 |   AKISMET_KEY    |                 xxxxxxxxxxxx                 |                      [可选]Akismet Key 用于垃圾评论检测，设为MANUAL_REVIEW开启人工审核，留空不使用反垃圾                       |
