@@ -2,56 +2,7 @@ module.exports = {
   "title": "平凡的你我",
   "description": "理想成为大牛的小陈同学",
   "dest": "public",
-  "head": [
-    [
-      "link",
-      {
-        "rel": "icon",
-        "href": "/favicon.ico"
-      }
-    ],
-    [
-      "meta",
-      {
-        "name": "viewport",
-        "content": "width=device-width,initial-scale=1,user-scalable=no"
-      }
-    ],
-    [
-      "script", {
-        "language": "javascript",
-        "type": "text/javascript",
-        "src": "https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"
-      }
-    ],
-    [
-      "script", {
-        "language": "javascript",
-        "type": "text/javascript",
-        "src": "/js/alert.js"
-      }
-    ],
-    [
-      "script", {
-        "language": "javascript",
-        "type": "text/javascript",
-        "src": "/js/autoPush.js"
-      }
-    ],
-    [
-      "script", {
-        "language": "javascript",
-        "type": "text/javascript",
-        "src": "/js/tongji.js"
-      }
-    ],
-    [
-      "script", {
-        "src": " https://www.googletagmanager.com/gtag/js?id=UA-158081883-1",
-        "axync": true
-      }
-    ]
-  ],
+  "head": require('./head'),
   "theme": "reco",
   "themeConfig": {
     "nav": require('./nav'),
@@ -73,34 +24,9 @@ module.exports = {
     "record": "陕ICP备19024018号-1",
     "recordLink": 'http://www.beian.miit.gov.cn',
     startYear: '2018',
-    // friendLink: [{
-    //   title: '',
-    //   desc: '',
-    //   avatar: "",
-    //   link: ''
-    // }]
   },
   "markdown": {
     "lineNumbers": true
   },
-  plugins: [
-    [
-      "dynamic-title",
-      {
-        showIcon: "/favicon.ico",
-        showText: "୧((〃•̀ꇴ•〃))૭⁺✧ 欢迎回来！",
-        hideIcon: "/favicon.ico",
-        hideText: "(⸝⸝⸝ᵒ̴̶̷̥́ ⌑ ᵒ̴̶̷̣̥̀⸝⸝⸝) 喔哟，别走哎！",
-        recoverTime: 2000
-      }
-    ], 'go-top', ["@vuepress-reco/back-to-top", false],
-    [
-      'vuepress-plugin-container',
-      {
-        type: 'theorem',
-        before: info => `<div class="theorem"><p class="title">${info}</p>`,
-        after: '</div>',
-      },
-    ]
-  ]
+  plugins: require('./plugins')
 }

@@ -39,6 +39,23 @@ var friendList = [{
         desc: "不忘初心、放得始终",
         link: "http://ctlyt.yunypan.cn",
         thumbnail: "http://ctlyt.yunypan.cn/avatar"
+    }, {
+        name: "Lao's Blog",
+        desc: '练习Bug时长两年半的程序员',
+        link: 'https://blog.laoooo.cn:88/',
+        thumbnail: 'https://img.laoooo.cn:88/2019/07/18/5d2ff27c66a50.jpeg',
+    },
+    {
+        name: "cos0'blog",
+        desc: "年轻，就要折腾",
+        link: "http://cos0.xyz",
+        thumbnail: "https://avatar.dawnlab.me/qq/1636648138",
+    },
+    {
+        name: "木子博客",
+        desc: "用生活记录我们的爱！",
+        link: "https://muuzi.cn/",
+        thumbnail: "https://muuzi.cn/mzlogo.png",
     }
 ]
 
