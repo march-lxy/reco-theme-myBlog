@@ -5,7 +5,7 @@ title: '友人帐'
 
 ::: prompt  注意啦
 想交换友链的请先添加本站链接。<br>
-然后在<red>本页面留言</red>。<br>
+然后在<span style="color:red;font-weight:bold">本页面留言</span>。<br>
 记得留下邮箱呦，添加完成后会向您发邮件。
 :::
 
