@@ -27,16 +27,18 @@
 
 
 <script>
-import list from "./../../utils/friend";
 export default {
   data() {
     return {
-      blogList: list,
+      blogList: [],
       bgInfo: [
         "background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)",
         "background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%)"
       ]
     };
+  },
+  mounted() {
+    this.blogList = window.friendList;
   },
   methods: {
     linkTo(link) {

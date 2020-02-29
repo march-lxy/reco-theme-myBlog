@@ -21,7 +21,7 @@ module.exports = {
     "searchMaxSuggestions": 10,
     "author": "caleb",
     "authorAvatar": "/avatar.png",
-    "record": "陕ICP备19024018号-1",
+    "record": "陕ICP备20001997号",
     "recordLink": 'http://www.beian.miit.gov.cn',
     startYear: '2018',
   },

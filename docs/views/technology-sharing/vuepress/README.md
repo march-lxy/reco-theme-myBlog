@@ -25,7 +25,7 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 |       变量       |                     示例                     |                                                              说明                                                              |
 |:----------------:|:--------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------:|
 |    SITE_NAME     |                  平凡的你我                  |                                                         [必填]博客名称                                                         |
-|     SITE_URL     | [https://bcjiangbo.cn](https://bcjiangbo.cn) |                                                         [必填]首页地址                                                         |
+|     SITE_URL     | [https://reinness.com](https://reinness.com) |                                                         [必填]首页地址                                                         |
 | **SMTP_SERVICE** |                    "163"                     | [新版支持]邮件服务提供商，支持 QQ、163、126、Gmail 以及 [**更多**](https://nodemailer.com/smtp/well-known/#supported-services) |
 |    SMTP_USER     |                xxxxx@163.com                 |                                                       [必填]SMTP登录用户                                                       |
 |    SMTP_PASS     |                   XXXXXXXX                   |                                          [必填]SMTP登录密码（QQ邮箱需要获取独立密码）                                          |
