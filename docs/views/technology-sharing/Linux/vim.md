@@ -3,7 +3,7 @@ title: Linux vi/vim 编辑器使用
 date:  2020-03-31
 categories:
 - Liunx
-tag:
+tags:
 - 教程
 ---
 
