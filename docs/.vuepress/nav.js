@@ -28,11 +28,16 @@ module.exports = [{
                 link: '/views/technology-sharing/cssDir/'
             }
         ]
-    },
-    {
-        text: '实用工具',
-        link: '/views/tools/',
-        icon: 'reco-category'
+    }, {
+        text: '收藏空间',
+        icon: 'reco-category',
+        items: [{
+            text: '实用工具',
+            link: '/views/tools/'
+        }, {
+            text: '高三课件',
+            link: '/views/other/exam'
+        }]
     },
     {
         text: '个人主页',
@@ -55,16 +60,19 @@ module.exports = [{
                 text: 'QQ',
                 link: 'http://wpa.qq.com/msgrd?v=3&uin=916305619&site=qq&menu=yes',
                 icon: 'reco-qq'
+            }, {
+                text: '关于我',
+                link: '/views/other/about',
+                icon: 'reco-eye'
             }
         ]
-
-    }, {
-        text: '关于我',
-        link: '/views/other/about',
-        icon: 'reco-eye'
     }, {
         text: '友人帐',
         link: '/views/other/theme-example',
         icon: 'reco-other'
+    }, {
+        text: '时间轴',
+        link: '/timeline/',
+        icon: 'reco-date'
     }
 ]

@@ -12,7 +12,7 @@ module.exports = {
     '/views/technology-sharing/jsDir/': utils.genSidebar('JS', filehelper.getFileName(docs + "/views/technology-sharing/jsDir/"), false),
     '/views/technology-sharing/Linux/': utils.genSidebar('Linux', filehelper.getFileName(docs + "/views/technology-sharing/Linux/"), false),
     '/views/technology-sharing/nuxt/': utils.genSidebar('nuxt', filehelper.getFileName(docs + "/views/technology-sharing/nuxt/"), false),
-    '/views/technology-sharing/css/': utils.genSidebar('css', filehelper.getFileName(docs + "/views/technology-sharing/cssDir/"), false),
+    '/views/technology-sharing/cssDir/': utils.genSidebar('css', filehelper.getFileName(docs + "/views/technology-sharing/cssDir/"), false),
     '/views/technology-sharing/vuepress/': utils.genSidebar('vuepress', filehelper.getFileName(docs + "/views/technology-sharing/vuepress/"), false),
     // 实用工具
 
