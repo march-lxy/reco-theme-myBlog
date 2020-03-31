@@ -16,10 +16,10 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 ## 云引擎"一键"部署
 ### 1. 填写代码库
 #### 在[Leancloud](https://leancloud.cn/dashboard/#/apps)云引擎设置界面，填写代码库并保存：[https://github.com/DesertsP/Valine-Admin.git](https://github.com/DesertsP/Valine-Admin.git)
-![填写代码库.png](/vuepress/git.png)
+![填写代码库.png](./img/git.png)
 
 ### 2.在设置页面，设置环境变量以及 Web 二级域名。
-![设置环境变量.png](/vuepress/setRule.png)
+![设置环境变量.png](./img/setRule.png)
 
 具体格式如下：
 |       变量       |                     示例                     |                                                              说明                                                              |
@@ -39,20 +39,20 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 **以上必填参数请务必正确设置。**
 
 ### 3.切换到部署标签页，分支使用master，点击部署即可
-![部署.png](/vuepress/bushu.png)
+![部署.png](./img/bushu.png)
 第一次部署可能会需要些时间。
 
-![部署日志.png](/vuepress/log.png)
+![部署日志.png](./img/log.png)
 
 ### 4.评论管理
 #### 访问设置的二级域名`https://二级域名.leanapp.cn/sign-up` ，注册管理员登录信息，如：[https://nk6vtvs0tdwc.leanapp.cn/sign-up](https://nk6vtvs0tdwc.leanapp.cn/sign-up)
 
-![网站地址.png](/vuepress/website.png)
+![网站地址.png](./img/website.png)
 
 ::: warning
 注：使用原版Valine如果遇到注册页面不显示直接跳转至登录页的情况，请手动删除_User表中的全部数据。
 :::
-![注册页.png](/vuepress/setLogin.png)
+![注册页.png](./img/setLogin.png)
 
 **此后，可以通过`https://二级域名.leanapp.cn/`管理评论。**
 
@@ -70,11 +70,11 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 
 (1)选择self-wake云函数，Cron表达式为`0 0/30 7-23 * * ?`，表示每天早6点到晚23点每隔30分钟访问云引擎，ADMIN_URL环境变量务必设置正确：
 
-![self-wake云函数.png](/vuepress/self_work.png)
+![self-wake云函数.png](./img/self_work.png)
 
 (2)选择resend-mails云函数，Cron表达式为`0 0 8 * * ?`，表示每天早8点检查过去24小时内漏发的通知邮件并补发：
 
-![resend-mails云函数.png](/vuepress/resend.png)
+![resend-mails云函数.png](./img/resend.png)
 
 **添加定时器后记得点击启动方可生效。**
 
@@ -115,7 +115,7 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 <div style="border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;"><h2 style="border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;">您在<a style="text-decoration:none;color: #12ADDB;" href="${SITE_URL}" target="_blank">            ${SITE_NAME}</a>上的评论有了新的回复</h2> ${PARENT_NICK} 同学，您曾发表评论：<div style="padding:0 12px 0 12px;margin-top:18px"><div style="background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;">            ${PARENT_COMMENT}</div><p><strong>${NICK}</strong>回复说：</p><div style="background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;"> ${COMMENT}</div><p>您可以点击<a style="text-decoration:none; color:#12addb" href="${POST_URL}" target="_blank">查看回复的完整內容</a>，欢迎再次光临<a style="text-decoration:none; color:#12addb" href="${SITE_URL}" target="_blank">${SITE_NAME}</a>。<br></p></div></div>
 ```
 效果如图：
-![默认主题.png](/vuepress/default.png)
+![默认主题.png](./img/default.png)
 
 **（2）彩虹风格的@通知邮件模板代码：**
 
@@ -123,7 +123,7 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 <div style="border-top:2px solid #12ADDB;box-shadow:0 1px 3px #AAAAAA;line-height:180%;padding:0 15px 12px;margin:50px auto;font-size:12px;"><h2 style="border-bottom:1px solid #DDD;font-size:14px;font-weight:normal;padding:13px 0 10px 8px;">您在<a style="text-decoration:none;color: #12ADDB;" href="${SITE_URL}" target="_blank">            ${SITE_NAME}</a>上的评论有了新的回复</h2> ${PARENT_NICK} 同学，您曾发表评论：<div style="padding:0 12px 0 12px;margin-top:18px"><div style="background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;">            ${PARENT_COMMENT}</div><p><strong>${NICK}</strong>回复说：</p><div style="background-color: #f5f5f5;padding: 10px 15px;margin:18px 0;word-wrap:break-word;"> ${COMMENT}</div><p>您可以点击<a style="text-decoration:none; color:#12addb" href="${POST_URL}" target="_blank">查看回复的完整內容</a>，欢迎再次光临<a style="text-decoration:none; color:#12addb" href="${SITE_URL}" target="_blank">${SITE_NAME}</a>。<br></p></div></div>
 ```
 效果如图：
-![彩虹风格.png](/vuepress/new.png)
+![彩虹风格.png](./img/new.png)
 
 
 博主通知邮件模板中的可用变量与@通知中的基本一致，***PARENT_NICK*** 和 ***PARENT_COMMENT*** 变量不再可用。
@@ -140,7 +140,7 @@ Valine Admin 是 Valine 评论系统的扩展和增强，主要实现评论邮�
 <div style="border-radius: 10px 10px 10px 10px;font-size:13px;    color: #555555;width: 666px;font-family:'Century Gothic','Trebuchet MS','Hiragino Sans GB',微软雅黑,'Microsoft Yahei',Tahoma,Helvetica,Arial,'SimSun',sans-serif;margin:50px auto;border:1px solid #eee;max-width:100%;background: #ffffff repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);"><div style="width:100%;background:#49BDAD;color:#ffffff;border-radius: 10px 10px 0 0;background-image: -moz-linear-gradient(0deg, rgb(67, 198, 184), rgb(255, 209, 244));background-image: -webkit-linear-gradient(0deg, rgb(67, 198, 184), rgb(255, 209, 244));height: 66px;"><p style="font-size:15px;word-break:break-all;padding: 23px 32px;margin:0;background-color: hsla(0,0%,100%,.4);border-radius: 10px 10px 0 0;">您在<a style="text-decoration:none;color: #ffffff;"href="${SITE_URL}">${SITE_NAME}</a>上有新评论啦！</p></div><div style="margin:40px auto;width:90%"><p>${NICK}给您的回复如下：</p><div style="background: #fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);margin:20px 0px;padding:15px;border-radius:5px;font-size:14px;color:#555555;">${COMMENT}</div><p>您可以点击<a style="text-decoration:none; color:#12addb"href="${POST_URL}#comments">查看回复的完整內容</a>，欢迎再次光临<a style="text-decoration:none; color:#12addb"href="${SITE_URL}">${SITE_NAME}</a>。</p><style type="text/css">a:link{text-decoration:none}a:visited{text-decoration:none}a:hover{text-decoration:none}a:active{text-decoration:none}</style></div></div>
 ```
 效果如图：
-![彩虹风格.png](/vuepress/new_us.png)
+![彩虹风格.png](./img/new_us.png)
 
 **以上所有内容供大家参考，如有问题请及时指正，如有侵权，请及时联系删除**
 

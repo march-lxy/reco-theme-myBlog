@@ -21,6 +21,13 @@ module.exports = [
         }
     ],
     [
+        "meta",
+        {
+            "name": "keywords",
+            "content": "技术教程,个人分享,博客,个人博客,js,html,css,JS,HTML,CSS,Linux,node,vuepress,nuxt"
+        }
+    ],
+    [
         "script", {
             "language": "javascript",
             "type": "text/javascript",
