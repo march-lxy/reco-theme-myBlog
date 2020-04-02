@@ -1,0 +1,226 @@
+$itemHeight:125px;
+
+h3 {
+    padding-top: 0em !important;
+    margin-top: 2em !important;
+}
+
+.box {
+    background-color: white;
+    margin: 10px 0 55px;
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.box-item {
+    width: $itemHeight;
+    height: $itemHeight;
+    line-height: $itemHeight;
+    vertical-align: middle;
+    margin: 5px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.box-1 {
+    .box-item:nth-child(1) {
+        order: 1;
+
+        &::before {
+            content: "1";
+            font-size: 16px;
+        }
+    }
+
+    .box-item:nth-child(2) {
+        order: 2;
+
+        &::before {
+            content: "2";
+            font-size: 16px;
+        }
+    }
+
+    .box-item:nth-child(3) {
+        order: -1;
+
+        &::before {
+            content: "-1";
+            font-size: 16px;
+        }
+    }
+
+    .box-item:nth-child(4) {
+        order: 0;
+
+        &::before {
+            content: "0";
+            font-size: 16px;
+        }
+    }
+}
+
+.box-2 {
+    flex-direction: column;
+
+    .box-item:nth-child(1) {
+        order: 1;
+
+        &::before {
+            content: "1";
+            font-size: 16px;
+        }
+    }
+
+    .box-item:nth-child(2) {
+        order: 2;
+
+        &::before {
+            content: "2";
+            font-size: 16px;
+        }
+    }
+
+    .box-item:nth-child(3) {
+        order: -1;
+
+        &::before {
+            content: "-1";
+            font-size: 16px;
+        }
+    }
+
+    .box-item:nth-child(4) {
+        order: 0;
+
+        &::before {
+            content: "0";
+            font-size: 16px;
+        }
+    }
+}
+
+.grow-1 {
+    .box-item {
+        flex-grow: 1;
+
+        &::before {
+            content: "1";
+            font-size: 16px;
+        }
+    }
+}
+
+.grow-2 {
+
+    .box-item {
+        flex-grow: 1;
+
+        &::before {
+            content: "1";
+            font-size: 16px;
+        }
+    }
+
+
+    .box-item:nth-child(2) {
+        flex-grow: 3;
+
+        &::before {
+            content: "3";
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+.shrink-1 {
+    .box-item {
+        flex-shrink: 1;
+        position: relative;
+
+        &::before {
+            content: "1";
+            font-size: 16px;
+            position: absolute;
+            top: -50px;
+            left: 20px;
+            color: red;
+        }
+    }
+}
+
+.shrink-2 {
+    .box-item {
+        flex-shrink: 1;
+        position: relative;
+
+        &::before {
+            content: "1";
+            font-size: 16px;
+            position: absolute;
+            top: -50px;
+            left: -12px;
+            color: red;
+            width: 130%;
+        }
+    }
+
+    .box-item:nth-child(3) {
+        flex-shrink: 0;
+        position: relative;
+
+        &::before {
+            content: "0";
+            font-size: 16px;
+            position: absolute;
+            top: -50px;
+            left: 5px;
+            color: red;
+            width: 100%;
+        }
+    }
+}
+
+.basis-1 {
+    .box-item {
+        flex-basis: 70px;
+    }
+}
+
+.flex-1 {
+    .box-item {
+        flex: auto;
+    }
+}
+
+.flex-2 {
+    .box-item {
+        flex: none;
+    }
+}
+
+.self-1 {
+    height: 200px;
+
+    .box-item:nth-child(3) {
+        align-self: flex-end;
+        position: relative;
+
+        &::before {
+            content: "flex-end";
+            font-size: 14px;
+            position: absolute;
+            top: -50px;
+            left: 0px;
+            color: red;
+            width: 100%;
+        }
+    }
+}
+

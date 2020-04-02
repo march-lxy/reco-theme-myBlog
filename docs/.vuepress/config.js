@@ -24,6 +24,7 @@ module.exports = {
     "record": "陕ICP备20001997号",
     "recordLink": 'http://www.beian.miit.gov.cn',
     startYear: '2018',
+    timeLineDesc: '未来可期！'
   },
   "markdown": {
     "lineNumbers": true

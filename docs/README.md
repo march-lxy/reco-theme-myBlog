@@ -4,7 +4,9 @@ bgImage: /hero.jpg
 bgImageStyle: {
   height: '450px',
 }
-isShowTitleInHome: true
+# isShowTitleInHome: true
+showTitleImg: true
+titleImg: /title.png
 actionText: 赶快上车 →
 actionLink: /views/technology-sharing/vue/
 features:

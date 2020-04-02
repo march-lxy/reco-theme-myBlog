@@ -1,0 +1,157 @@
+$itemHeight:125px;
+
+
+h3 {
+    padding-top: 0em !important;
+    margin-top: 2em !important;
+}
+
+.box {
+    background-color: white;
+    margin: 10px 0 55px;
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.box-item {
+    width: $itemHeight;
+    height: $itemHeight;
+    line-height: $itemHeight;
+    vertical-align: middle;
+    margin: 5px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.direction-2 {
+    flex-direction: row-reverse
+}
+
+.dire {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-3 {
+    flex-direction: column
+}
+
+.box-4 {
+    flex-direction: column-reverse
+}
+
+.wrap-2 {
+    flex-wrap: wrap;
+}
+
+.wrap-3 {
+    flex-wrap: wrap-reverse;
+}
+
+.flow-1{
+    flex-flow: row nowrap;
+}
+
+.justify-1 {
+    justify-content: flex-start;
+}
+
+.justify-2 {
+    justify-content: flex-end;
+}
+
+.justify-3 {
+    justify-content: center;
+}
+
+.justify-4 {
+    justify-content: space-between;
+}
+
+.justify-5 {
+    justify-content: space-around;
+}
+
+.align {
+    height: 200px;
+}
+
+.align-1 {
+    align-items: flex-start;
+}
+
+.align-2 {
+    align-items: flex-end;
+}
+
+.align-3 {
+    align-items: center;
+}
+
+.align-4 {
+    align-items: baseline;
+
+    .item-tall {
+        height: 200px - 10px;
+    }
+
+    .box-item {
+        text-decoration: underline;
+        line-height: 50px;
+    }
+
+    .box-item:nth-child(1) {
+        line-height: 60px;
+        font-size: 22px;
+    }
+
+    .box-item:nth-child(3) {
+        line-height: 60px;
+        font-size: 22px;
+    }
+}
+
+.align-5 {
+    align-items: stretch;
+
+    .box-item {
+        height: auto;
+    }
+}
+
+.alignC {
+    flex-wrap: wrap;
+    height: 350px;
+}
+
+.alignC-1 {
+    align-content: flex-start;
+}
+
+.alignC-2 {
+    align-content: flex-end;
+}
+
+.alignC-3 {
+    align-content: center;
+}
+
+.alignC-4 {
+    align-content: space-between;
+}
+
+.alignC-5 {
+    align-content: space-around;
+}
+
+.alignC-6 {
+    align-content: stretch;
+
+    .box-item {
+        height: auto;
+    }
+}
